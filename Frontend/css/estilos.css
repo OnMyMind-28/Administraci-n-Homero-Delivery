@@ -1,0 +1,57 @@
+.body-color{
+    background-color: #FFC2B2 ;
+
+}
+   /*Diseño navbar*/
+   .nav-1{
+    background-color: #FEBB22;
+ }
+ .logo{
+    width: 80px;
+    height: 50px;
+ }
+ .n{
+    color: #6C6966,#FEBB22, #FFC2B2;
+ }
+ /*Formulario*/
+ .container-form{
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 200px;
+    margin-left: 475px;
+    margin-top: 140px;
+    border-radius: 5px;
+    
+ }
+ .tex-form{
+    display: inline;
+ }
+ #username{
+    margin-left: 150px;
+    background-color: #e4e2e1;
+    border: 0;
+    width: 220px;
+ }
+ #pass{
+    margin-left: 150px;
+    background-color: #e4e2e1;
+    border: 0;
+    width: 220px;
+ }
+ .btn-IN{
+    margin-left: 145px;
+    background-color: #FEBB22;
+    border: 0;
+    border-radius: 20px;
+    color: #FFFFFF;
+ }
+ /*contenido none*/
+ #nav-1{
+    display: block;
+ }
+ #cont-formulario{
+    display: block;
+ }
+ #cont-1{
+    display: none;
+ }
