@@ -65,24 +65,66 @@ function generaMenuLateral(){
     let user = usuarios;
     
     document.getElementById ('cont-1').innerHTML += `
+    <div class="container-fluid nav-2P">
+    <a class="navbar-brand icon-nav" href="#">
+    <span><i class="fa-regular fa-message fa-2x me-3"></i></span>
+    <span><i class="fa-sharp fa-solid fa-border-all fa-2x me-3"></i></span>
+    <span ><i class="fa-solid fa-right-from-bracket fa-2x me-3"></i></span>
+    </a>
+  </div>
+  
     <div class="menu-lateral">
     <img class="img-user" src="img/usuarios/1.user.png" alt="">
     <h6 class="name-user">Romeo Jimenez</h6>
     <hr class="hr-user" >
     <div class="container-fluid">
               <div class="">
-                  
-                  </button>
                   <div class="menu">
-                    <a class="dropdown-item" href="#"><i class="fa-solid fa-bell icon"></i>Empresas       <i id="sunM-1" class="fa-solid fa-caret-down "  style=" margin-left:255px ;" onclick="toolsEmp()"></i></a>
-                    <hr class="hr-menu" >
-                    <a class="dropdown-item" href="#"><i class="fa-solid fa-user-group icon"></i>Productos      <i class="fa-solid fa-caret-down"style=" margin-left:245px ;"></i></a>
-                    <hr class="hr-menu" >
-                    <a class="dropdown-item" href="#"><i class="fa-solid fa-question icon"></i>Motoristas     <i class="fa-solid fa-caret-down"style=" margin-left:252px ;"></i></a>
-                    <hr class="hr-menu" >
-                    <a class="dropdown-item" href="#"><i class="fa-solid fa-gear icon"></i>Clientes       <i class="fa-solid fa-caret-down"style=" margin-left:265px ;"></i></a>
-                    <hr class="hr-menu" >
-                    <a class="dropdown-item" href="index.html"><i class="fa-solid fa-arrow-right-from-bracket icon"></i>Administradores<i class="fa-solid fa-caret-down"style=" margin-left:208px ;"></i></a>
+                  <ul>
+                  <li class="submenu">
+                      <a href="#"><span class="fa-solid fa-shop"></span>Empresas<span class="fa-solid fa-caret-down"></span></a>
+                      <ul class="hijo">
+                          <li><a href="#">Agregar <span class=""></span></a></li>
+                          <li><a href="#">Editar <span class=""></span></a></li>
+                          <li><a href="#">Eliminar <span class=""></span></a></li>
+                      </ul>
+                  </li>
+                    <hr>
+                  <li class="submenu">
+                      <a href="#"><span class="fa-solid fa-burger"></span>Productos<span class="fa-solid fa-caret-down"></span></a>
+                      <ul class="hijo">
+                          <li><a href="#">Agregar <span class=""></span></a></li>
+                          <li><a href="#">Editar <span class=""></span></a></li>
+                          <li><a href="#">Eliminar <span class=""></span></a></li>
+                      </ul>
+                  </li>
+                  <hr>
+                  <li class="submenu">
+                      <a href="#"><span class="fa-solid fa-motorcycle"></span>Motoristas<span class="fa-solid fa-caret-down"></span></a>
+                      <ul class="hijo">
+                          <li><a href="#">Agregar <span class=""></span></a></li>
+                          <li><a href="#">Editar <span class=""></span></a></li>
+                          <li><a href="#">Eliminar <span class=""></span></a></li>
+                      </ul>
+                  </li>
+                  <hr>
+                  <li class="submenu">
+                      <a href="#"><span class="fa-solid fa-user-group"></span>Clientes<span class="fa-solid fa-caret-down"></span></a>
+                      <ul class="hijo">
+                          <li><a href="#">Ver clientes<span class=""></span></a></li>
+                         
+                      </ul>
+                  </li>
+                  <hr>
+                  <li class="submenu">
+                      <a href="#"><span class="fa-solid fa-laptop-code"></span>Administradores<span class="fa-solid fa-caret-down"></span></a>
+                      <ul class="hijo">
+                          <li><a href="#">Agregar <span class=""></span></a></li>
+                          <li><a href="#">Editar <span class=""></span></a></li>
+                          <li><a href="#">Eliminar <span class=""></span></a></li>
+                      </ul>
+                  </li>
+              </ul>
                     
                   </div>
                 </div>
@@ -97,12 +139,62 @@ function generaMenuLateral(){
 //Función de herramientas de empresas
 function toolsEmp() {
     document.getElementById ('sunM-1').innerHTML += `
-    <div class="dropdown">
-
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
+    <div class="dropdown subEmpresa" >
+    <option value="rigatoni">Rigatoni</option>
+  <option value="dave">Dave</option>
+  <option value="pumpernickel">Pumpernickel</option>
+  <option value="reeses">Reeses</option>
 </div>`
 }
+
+/******************************************************************************************************************** */
+//FUNCIONES PARA OPCIONES DE SUBMENÚ EMPRESAS
+//Función Agregar
+function AgregarEmpresa () {
+    
+}
+function EditarEmpresa () {
+    
+}
+function EliminarEmpresa () {
+    
+}
+//FUNCIONES PARA OPCIONES DE SUBMENÚ PRODUCTOS
+//Función Agregar
+function AgregarProductos () {
+    
+}
+function EditarProductos () {
+    
+}
+function EliminarProductos () {
+    
+}
+//FUNCIONES PARA OPCIONES DE SUBMENÚ MOTORISTAS
+//Función Agregar
+function AgregarMotoristas () {
+    
+}
+function EditarMotoristas () {
+    
+}
+function EliminarMotoristas () {
+    
+}
+//FUNCIONES PARA OPCIONES DE SUBMENÚ CLIENTES
+//Función que genera el listado de clientes
+function VerClientes () {
+    
+}
+//FUNCIONES PARA OPCIONES DE SUBMENÚ ADMINISTRADORES
+//Función Agregar
+function AgregarAdministrador() {
+    
+}
+function EditarAdministrador() {
+    
+}
+function EliminarAdministrador() {
+    
+}
+/********************************************************************************************************************* */

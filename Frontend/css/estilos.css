@@ -70,11 +70,38 @@
    margin-top: 100px !important;
 }
 /**********************************************************************************************************************/
+/*Navbar*/
+.nav-2P{
+   background-color: #FEBB22;
+   width: 948px !important;
+   height: 70px;
+   position: absolute !important;
+   margin-left: 400px !important;
+   z-index:1000;
+}
+.icon-nav{
+   display:flex;
+   justify-content: right;
+   margin-top: 18px;
+   margin-right: 10px;
+}
+.fa-message{
+   color: #FFFFFF;
+}
+.fa-border-all{
+   color: #FFFFFF;
+}
+.fa-right-from-bracket{
+   color: #FFFFFF;
+}
+/**********************************************************************************************************************/
 /*Menú lateral*/
 .menu-lateral{
    width: 400px;
-   height: 750px;
+   height: 1000px;
    background-color: #FFAE9E;
+   margin-top: 0;
+   
 }
 .img-user{
    margin-left:130px;
@@ -104,6 +131,86 @@
    color:#FFFFFF;
    width: 380px;
    
+}
+/************************************************************************************************************************/
+/*Submenu de opción empresas*/
+.subEmpresa{
+   background-color: #FFFFFF;
+   color: black;
+  
+   z-index: 1000;
+}
+
+button:hover{
+background-color: aqua;
+}
+ ul {
+	list-style:none;
+   margin-left: 0 !important;
+   padding: 0;
+   margin: 0;
+   border-radius: 10px;
+ 
+}
+
+ ul li {
+	position: relative;
+   
+}
+
+ ul li:hover {
+	background:pink;
+   border-radius: 10px;
+   margin-left: 0;
+   margin: 0;padding: auto;
+   padding: 0;
+}
+
+ ul li a {
+	color:#FFFFFF;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+ul li a:hover{
+   color: purple;
+}
+
+ ul li a span {
+	margin-right:5px;
+}
+
+ ul li:hover .hijo {
+	display:block;
+}
+
+ ul li .hijo {
+	display: none;
+	background:rgb(253, 107, 131);
+	position: absolute;
+	width: 344px;
+	z-index:1000;
+}
+
+ ul li .hijo li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+ ul li .hijo li a {
+	display: block;
+}
+
+ ul li .hijo li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:5px;
+}
+.fa-caret-down{
+   padding: 10px;
 }
 /************************************************************************************************************************/
  /*contenido none*/
