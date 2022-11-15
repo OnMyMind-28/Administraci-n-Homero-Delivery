@@ -4,19 +4,24 @@
 }
    /*Diseño navbar*/
    .nav-1{
-    background-color: #FEBB22;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
  }
  .logo{
     width: 100px;
     height: 65px;
  }
- .n{
-    color: #6C6966,#FEBB22, #FFC2B2;
+ 
+ /*Diseño img-logo en lateral derecho*/
+ .img-right-log{
+   position:absolute;
+  top: 240px;
+  left : 708px;
+  z-index: 1;
  }
  /*Formulario*/
 
  .container-form{
-    background-color: #FFFFFF;
+   background-color: #FFFFFF;
     width: 400px;
     height: 200px;
     margin-left: 465px;
@@ -72,7 +77,7 @@
 /**********************************************************************************************************************/
 /*Navbar*/
 .nav-2P{
-   background-color: #FEBB22;
+   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
    width: 948px !important;
    height: 70px;
    position: absolute !important;
@@ -142,7 +147,8 @@
 }
 
 button:hover{
-background-color: aqua;
+   background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% );
+   
 }
  ul {
 	list-style:none;
@@ -186,7 +192,7 @@ ul li a:hover{
 
  ul li .hijo {
 	display: none;
-	background:rgb(253, 107, 131);
+	background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
 	position: absolute;
 	width: 344px;
 	z-index:1000;
