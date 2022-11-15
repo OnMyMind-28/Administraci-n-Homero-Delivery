@@ -73,6 +73,7 @@ function generaMenuLateral(){
     </a>
   </div>
   
+  
     <div class="menu-lateral">
     <img class="img-user" src="img/usuarios/1.user.png" alt="">
     <h6 class="name-user">Romeo Jimenez</h6>
@@ -144,37 +145,173 @@ function generaMenuLateral(){
 function AgregarEmpresa () {
     document.getElementById ('sub-emp-agregar').innerHTML += `
     <div class="div-Emp-1">
-    <div class="form-emp-Agregar">
-    <div class="mb-3">
-    <label for="formGroupExampleInput" class="form-label">Example label</label>
-    <input type="text" class="form-control input-1" id="formGroupExampleInput" placeholder="Example input placeholder">
+    <div class="div-form">
+    <div class="form-floating mt-5">
+      <input type="email" class="form-control input-1" id="floatingInputGrid" placeholder="ID" value="id">
+      <label style="margin-left: 10px;" for="floatingInputGrid">ID</label>
+    </div>
+    <div class="form-floating mt-2">
+      <input type="email" class="form-control input-3" id="floatingInputGrid" placeholder="nombre empresa" value="nombre">
+      <label style="margin-left: 10px;" for="floatingInputGrid">Nombre de la empresa</label>
+    </div>
+    <div class="row g-2 mt-2">
+  <div class="col-md">
+    <div class="form-floating input-4">
+      <input type="email" class="form-control" id="floatingInputGrid" placeholder="RTN" value="RTN">
+      <label class="" for="floatingInputGrid">RTN</label>
+    </div>
   </div>
-  <div class="mb-3">
-    <label for="formGroupExampleInput2" class="form-label">Another label</label>
-    <input type="text" class="form-control input-1" id="formGroupExampleInput2" placeholder="Another input placeholder">
+  <div class="col-md">
+    <div class="form-floating input-4">
+      <select class="form-select" id="floatingSelectGrid">
+        <option selected>Imagen</option>
+        <option value="1">img-1</option>
+        <option value="2">img-2</option>
+        <option value="3">img3</option>
+      </select>
+      <label for="floatingSelectGrid">Selecionar imagen</label>
+    </div>
   </div>
-  <div class="mb-3 input-group ">
-  <label for="formGroupExampleInput" class="form-label">Example</label>
-  <input type="text" class="form-control  " id="formGroupExampleInput" placeholder="Example input placeholder">
+</div>
+    <div class="row g-2 mt-2" >
+    
+  <div class="col-md">
+  
+    <div class="form-floating input-1">
+      <input type="email" class="form-control " id="floatingInputGrid" placeholder="nombre" value="nombre">
+      <label for="floatingInputGrid">Contacto comercial</label>
 
-<label for="formGroupExampleInput " class="form-label">Example </label>
-<input type="text" class="form-control "  id="formGroupExampleInput" placeholder="Example input placeholder">
+      <input type="email" class="form-control input-2" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+      <label class="" style="margin-top:65px;" for="floatingInputGrid">E-mail</label>
+    </div>
+  </div>
+  
+  <div class="col-md">
+    <div class="form-floating input-1">
+    <input type="email" class="form-control " id="floatingInputGrid" placeholder="numero" value="Tel">
+    <label for="floatingInputGrid">Telefono</label>
+      
+    </div>
+  </div>
 </div>
-</div>
+<div class="btn-form-div">
+
+<button class="btn-Form " onclick="">Agregar</button>
+<button class="btn-Form " onclick="">Cancelar</button>
+<div>
     </div>
     `
 }
 function EditarEmpresa () {
     document.getElementById ('sub-emp-editar').innerHTML += `
     <div class="div-Emp-1">
-    Prueba2Empresa
+    <div class="div-form">
+    <div class="form-floating mt-3">
+      <input type="email" class="form-control input-3" id="floatingInputGrid" placeholder="nombre empresa" value="busqueda">
+      <label style="margin-left: 10px;" for="floatingInputGrid">Buscar empresa</label>
+    </div>
+    <div class="form-floating mt-2">
+      <input type="email" class="form-control input-1" id="floatingInputGrid" placeholder="ID" value="id">
+      <label style="margin-left: 10px;" for="floatingInputGrid">ID</label>
+    </div>
+    <div class="form-floating mt-2">
+      <input type="email" class="form-control input-3" id="floatingInputGrid" placeholder="nombre empresa" value="nombre">
+      <label style="margin-left: 10px;" for="floatingInputGrid">Nombre de la empresa</label>
+    </div>
+    <div class="row g-2 mt-1">
+  <div class="col-md">
+    <div class="form-floating input-4">
+      <input type="email" class="form-control" id="floatingInputGrid" placeholder="RTN" value="RTN">
+      <label class="" for="floatingInputGrid">RTN</label>
+    </div>
+  </div>
+  <div class="col-md">
+    <div class="form-floating input-4">
+      <select class="form-select" id="floatingSelectGrid">
+        <option selected>Imagen</option>
+        <option value="1">img-1</option>
+        <option value="2">img-2</option>
+        <option value="3">img3</option>
+      </select>
+      <label for="floatingSelectGrid">Selecionar imagen</label>
+    </div>
+  </div>
+</div>
+    <div class="row g-2 mt-2" >
+    
+  <div class="col-md">
+  
+    <div class="form-floating input-1">
+      <input type="email" class="form-control " id="floatingInputGrid" placeholder="nombre" value="nombre">
+      <label for="floatingInputGrid">Contacto comercial</label>
+
+      <input type="email" class="form-control input-2" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+      <label class="" style="margin-top:65px;" for="floatingInputGrid">E-mail</label>
+    </div>
+  </div>
+  
+  <div class="col-md">
+    <div class="form-floating input-1">
+    <input type="email" class="form-control " id="floatingInputGrid" placeholder="numero" value="Tel">
+    <label for="floatingInputGrid">Telefono</label>
+      
+    </div>
+  </div>
+</div>
+<div class="btn-form-div">
+
+<button class="btn-Form " onclick="">Actualizar</button>
+<button class="btn-Form " onclick="">Cancelar</button>
+<div>
     </div>
     `
 }
 function EliminarEmpresa () {
     document.getElementById ('sub-emp-eliminar').innerHTML += `
     <div class="div-Emp-1">
-    Prueba3Empresa
+    <div class="div-form">
+    <div class="form-floating mt-5">
+      <input type="email" class="form-control input-3" id="floatingInputGrid" placeholder="nombre empresa" value="busqueda">
+      <label style="margin-left: 10px;" for="floatingInputGrid">Buscar empresa</label>
+    </div>
+    <div class="form-floating mt-2">
+      <input type="email" class="form-control input-1" id="floatingInputGrid" placeholder="ID" value="id">
+      <label style="margin-left: 10px;" for="floatingInputGrid">ID</label>
+    </div>
+    <div class="form-floating mt-2">
+      <input type="email" class="form-control input-3" id="floatingInputGrid" placeholder="nombre empresa" value="nombre">
+      <label style="margin-left: 10px;" for="floatingInputGrid">Nombre de la empresa</label>
+    </div>
+    <div class="row g-2 mt-1">
+  <div class="col-md">
+    <div class="form-floating input-4">
+      <input type="email" class="form-control" id="floatingInputGrid" placeholder="RTN" value="RTN">
+      <label class="" for="floatingInputGrid">RTN</label>
+    </div>
+  </div>
+  <div class="col-md">
+    <div class="form-floating input-4">
+      <select class="form-select" id="floatingSelectGrid">
+        <option selected>Imagen</option>
+        <option value="1">img-1</option>
+        <option value="2">img-2</option>
+        <option value="3">img3</option>
+      </select>
+      <label for="floatingSelectGrid">Selecionar imagen</label>
+    </div>
+  </div>
+</div>
+    <div class="row g-2 mt-2" >
+    
+  
+  
+  
+</div>
+<div class="btn-form-div">
+
+<button class="btn-Form " onclick="">Eliminar</button>
+<button class="btn-Form " onclick="">Cancelar</button>
+<div>
     </div>
     `
 }
