@@ -132,6 +132,7 @@ function generaMenuLateral(){
                 
           </div>
       </div>
+      <img class="img-right-log" src="img/Logo/1.logo.png" alt="">
     
     `
 }generaMenuLateral()
