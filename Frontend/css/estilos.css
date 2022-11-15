@@ -219,7 +219,7 @@ ul li a:hover{
    padding: 10px;
 }
 /************************************************************************************************************************/
- /*contenido none*/
+ /*contenido none principal*/
  #nav-1{
     display: block;
  }
@@ -229,3 +229,61 @@ ul li a:hover{
  #cont-1{
     display: none;
  }
+/*CONTENIDOS DE SUBMENUS*/
+#sub-emp-agregar{
+   display: none;
+}
+#sub-emp-editar{
+   display: none;
+}
+#sub-emp-eliminar{
+   display: none;
+}
+#sub-prod-agregar{
+   display: none;
+}
+#sub-prod-editar{
+   display: none;
+}
+#sub-prod-eliminar{
+   display: none;
+}
+#sub-moto-agregar{
+   display: none;
+}
+#sub-moto-editar{
+   display: none;
+}
+#sub-moto-eliminar{
+   display: none;
+}
+#sub-ver-cliente{
+   display: none;
+}
+#sub-admin-agregar{
+   display: none;
+}
+#sub-admin-editar{
+   display: none;
+}
+#sub-admin-eliminar{
+   display: none;
+}
+/***********************************************************************************************/
+/*Diseño formularios de submenus*/
+.div-Emp-1{
+   width: 850px;
+   height: 500px;
+   background-image: linear-gradient( 64.5deg,  rgba(245, 116, 185, 0.592) 14.7%, rgba(89, 98, 223, 0.638) 88.7% );
+   position:absolute;
+  top: 120px;
+  left : 450px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+
+
+
+
+

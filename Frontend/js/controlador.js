@@ -84,34 +84,34 @@ function generaMenuLateral(){
                   <li class="submenu">
                       <a href="#"><span class="fa-solid fa-shop"></span>Empresas<span class="fa-solid fa-caret-down"></span></a>
                       <ul class="hijo">
-                          <li><a href="#">Agregar <span class=""></span></a></li>
-                          <li><a href="#">Editar <span class=""></span></a></li>
-                          <li><a href="#">Eliminar <span class=""></span></a></li>
+                          <li onclick= "AgregarEmpresa (),ContenidoEmpresa (1)"><a href="#">Agregar <span class=""></span></a></li>
+                          <li onclick= "EditarEmpresa (),ContenidoEmpresa (2)"><a href="#">Editar <span class=""></span></a></li>
+                          <li onclick= "EliminarEmpresa (),ContenidoEmpresa (3)"><a href="#">Eliminar <span class=""></span></a></li>
                       </ul>
                   </li>
                     <hr>
                   <li class="submenu">
                       <a href="#"><span class="fa-solid fa-burger"></span>Productos<span class="fa-solid fa-caret-down"></span></a>
                       <ul class="hijo">
-                          <li><a href="#">Agregar <span class=""></span></a></li>
-                          <li><a href="#">Editar <span class=""></span></a></li>
-                          <li><a href="#">Eliminar <span class=""></span></a></li>
+                          <li onclick="AgregarProductos (),ContenidoProducto (1) "><a href="#">Agregar <span class=""></span></a></li>
+                          <li onclick="EditarProductos (),ContenidoProducto (2) "><a href="#">Editar <span class=""></span></a></li>
+                          <li onclick="EliminarProductos (),ContenidoProducto (3) "><a href="#">Eliminar <span class=""></span></a></li>
                       </ul>
                   </li>
                   <hr>
                   <li class="submenu">
                       <a href="#"><span class="fa-solid fa-motorcycle"></span>Motoristas<span class="fa-solid fa-caret-down"></span></a>
                       <ul class="hijo">
-                          <li><a href="#">Agregar <span class=""></span></a></li>
-                          <li><a href="#">Editar <span class=""></span></a></li>
-                          <li><a href="#">Eliminar <span class=""></span></a></li>
+                          <li onclick="AgregarMotoristas (),ContenidoMotorista(1)"><a href="#">Agregar <span class=""></span></a></li>
+                          <li onclick="EditarMotoristas (),ContenidoMotorista(2)"><a href="#">Editar <span class=""></span></a></li>
+                          <li onclick="EliminarMotoristas (),ContenidoMotorista(3)"><a href="#">Eliminar <span class=""></span></a></li>
                       </ul>
                   </li>
                   <hr>
                   <li class="submenu">
                       <a href="#"><span class="fa-solid fa-user-group"></span>Clientes<span class="fa-solid fa-caret-down"></span></a>
                       <ul class="hijo">
-                          <li><a href="#">Ver clientes<span class=""></span></a></li>
+                          <li  onclick="VerClientes () ,ContenidoCliente(1)"><a href="#">Ver clientes<span class=""></span></a></li>
                          
                       </ul>
                   </li>
@@ -119,9 +119,9 @@ function generaMenuLateral(){
                   <li class="submenu">
                       <a href="#"><span class="fa-solid fa-laptop-code"></span>Administradores<span class="fa-solid fa-caret-down"></span></a>
                       <ul class="hijo">
-                          <li><a href="#">Agregar <span class=""></span></a></li>
-                          <li><a href="#">Editar <span class=""></span></a></li>
-                          <li><a href="#">Eliminar <span class=""></span></a></li>
+                          <li onclick="AgregarAdministrador(), ContenidoAdmin(1)"><a href="#">Agregar <span class=""></span></a></li>
+                          <li onclick="EditarAdministrador(), ContenidoAdmin(2)"><a href="#">Editar <span class=""></span></a></li>
+                          <li onclick="EliminarAdministrador(),ContenidoAdmin(3) "><a href="#">Eliminar <span class=""></span></a></li>
                       </ul>
                   </li>
               </ul>
@@ -137,65 +137,238 @@ function generaMenuLateral(){
     `
 }generaMenuLateral()
 /********************************************************************************************************************** */
-//Función de herramientas de empresas
-function toolsEmp() {
-    document.getElementById ('sunM-1').innerHTML += `
-    <div class="dropdown subEmpresa" >
-    <option value="rigatoni">Rigatoni</option>
-  <option value="dave">Dave</option>
-  <option value="pumpernickel">Pumpernickel</option>
-  <option value="reeses">Reeses</option>
-</div>`
-}
 
 /******************************************************************************************************************** */
 //FUNCIONES PARA OPCIONES DE SUBMENÚ EMPRESAS
 //Función Agregar
 function AgregarEmpresa () {
-    
+    document.getElementById ('sub-emp-agregar').innerHTML += `
+    <div class="div-Emp-1">
+    Prueba1Empresa
+    </div>
+    `
 }
 function EditarEmpresa () {
-    
+    document.getElementById ('sub-emp-editar').innerHTML += `
+    <div class="div-Emp-1">
+    Prueba2Empresa
+    </div>
+    `
 }
 function EliminarEmpresa () {
-    
+    document.getElementById ('sub-emp-eliminar').innerHTML += `
+    <div class="div-Emp-1">
+    Prueba3Empresa
+    </div>
+    `
 }
 //FUNCIONES PARA OPCIONES DE SUBMENÚ PRODUCTOS
 //Función Agregar
 function AgregarProductos () {
-    
+    document.getElementById ('sub-prod-agregar').innerHTML += `
+    <div class="div-Emp-1">
+    Prueba1Producto
+    </div>
+    `
 }
 function EditarProductos () {
-    
+    document.getElementById ('sub-prod-editar').innerHTML += `
+    <div class="div-Emp-1">
+    Prueba2Producto
+    </div>
+    `
 }
 function EliminarProductos () {
-    
+    document.getElementById ('sub-prod-eliminar').innerHTML += `
+    <div class="div-Emp-1">
+    Prueba3Producto
+    </div>
+    `
 }
 //FUNCIONES PARA OPCIONES DE SUBMENÚ MOTORISTAS
 //Función Agregar
 function AgregarMotoristas () {
-    
+    document.getElementById ('sub-moto-agregar').innerHTML += `
+    <div class="div-Emp-1">
+    Prueba1Motorista
+    </div>
+    `
 }
 function EditarMotoristas () {
-    
+    document.getElementById ('sub-moto-editar').innerHTML += `
+    <div class="div-Emp-1">
+    Prueba2Motorista
+    </div>
+    `
 }
 function EliminarMotoristas () {
-    
+    document.getElementById ('sub-moto-eliminar').innerHTML += `
+    <div class="div-Emp-1">
+    Prueba3Motorista
+    </div>
+    `
 }
 //FUNCIONES PARA OPCIONES DE SUBMENÚ CLIENTES
 //Función que genera el listado de clientes
 function VerClientes () {
-    
+    document.getElementById ('sub-ver-cliente').innerHTML += `
+    <div class="div-Emp-1">
+    Prueba1Clientes
+    </div>
+    `
 }
 //FUNCIONES PARA OPCIONES DE SUBMENÚ ADMINISTRADORES
 //Función Agregar
 function AgregarAdministrador() {
-    
+    document.getElementById ('sub-admin-agregar').innerHTML += `
+    <div class="div-Emp-1">
+    Prueba1Admin
+    </div>
+    `
 }
 function EditarAdministrador() {
-    
+    document.getElementById ('sub-admin-editar').innerHTML += `
+    <div class="div-Emp-1">
+    Prueba2Admin
+    </div>
+    `
 }
 function EliminarAdministrador() {
+    document.getElementById ('sub-admin-eliminar').innerHTML += `
+    <div class="div-Emp-1">
+    Prueba3Admin
+    </div>
+    `
+}
+/******************************************************************************************** */
+//ALL CONTENIDO DE SUBMENÚ EMPRESAS
+let subEmpAgregar = 1;
+let subEmpEditar= 2;
+let subEmpEliminar = 3;
+function ContenidoEmpresa (opcion){
+    switch (opcion) {
+        case subEmpAgregar:
+            document.getElementById('sub-emp-agregar').style.display = "block";
+            document.getElementById('sub-emp-editar').style.display = "none";
+            document.getElementById('sub-emp-eliminar').style.display = "none";
+            break;
+        case subEmpEditar:
+            document.getElementById('sub-emp-agregar').style.display = "none";
+            document.getElementById('sub-emp-editar').style.display = "block";
+            document.getElementById('sub-emp-eliminar').style.display = "none";
+            break;
+        case subEmpEliminar:
+            document.getElementById('sub-emp-agregar').style.display = "none";
+            document.getElementById('sub-emp-editar').style.display = "none";
+            document.getElementById('sub-emp-eliminar').style.display = "block";
+        break;
     
+        default:
+            break;
+    }
+}
+//ALL CONTENIDO DE SUBMENÚ PRODUCTOS
+
+let subProdAgregar =1;
+let subProdEditar= 2;
+let subProdEliminar = 3;
+function ContenidoProducto (opcion){
+    switch (opcion) {
+        case subProdAgregar:
+            document.getElementById('sub-prod-agregar').style.display = "block";
+            document.getElementById('sub-prod-editar').style.display = "none";
+            document.getElementById('sub-prod-eliminar').style.display = "none";
+            break;
+        case subProdEditar:
+            document.getElementById('sub-prod-agregar').style.display = "none";
+            document.getElementById('sub-prod-editar').style.display = "block";
+            document.getElementById('sub-prod-eliminar').style.display = "none";
+            break;
+        case subProdEliminar:
+            document.getElementById('sub-prod-agregar').style.display = "none";
+            document.getElementById('sub-prod-editar').style.display = "none";
+            document.getElementById('sub-prod-eliminar').style.display = "block";
+        break;
+    
+        default:
+            break;
+    }
+}
+//ALL CONTENIDO DE SUBMENÚ MOTORISTAS
+
+let subMotoAgregar = 1;
+let subMotoEditar= 2;
+let subMotoEliminar = 3;
+function ContenidoMotorista (opcion){
+    switch (opcion) {
+        case subMotoAgregar:
+            document.getElementById('sub-moto-agregar').style.display = "block";
+            document.getElementById('sub-moto-editar').style.display = "none";
+            document.getElementById('sub-moto-eliminar').style.display = "none";
+            break;
+        case subMotoEditar:
+            document.getElementById('sub-moto-agregar').style.display = "none";
+            document.getElementById('sub-moto-editar').style.display = "block";
+            document.getElementById('sub-moto-eliminar').style.display = "none";
+            break;
+        case subMotoEliminar:
+            document.getElementById('sub-moto-agregar').style.display = "none";
+            document.getElementById('sub-moto-editar').style.display = "none";
+            document.getElementById('sub-moto-eliminar').style.display = "block";
+        break;
+    
+        default:
+            break;
+    }
+}
+//ALL CONTENIDO DE SUBMENÚ CLIENTE
+let subVerCliente = 1;
+function ContenidoCliente(opcion){
+    switch (opcion) {
+        case subAdminAgregar:
+            document.getElementById('sub-ver-cliente').style.display = "block";
+          
+            break;
+       
+    
+        default:
+            break;
+    }
+}
+//ALL CONTENIDO DE SUBMENÚ ADMINISTRADORES
+let subAdminAgregar = 1;
+let subAdminEditar = 2;
+let subAdminEliminar = 3;
+
+function ContenidoAdmin(opcion){
+    switch (opcion) {
+        case subAdminAgregar:
+            document.getElementById('sub-admin-agregar').style.display = "block";
+            document.getElementById('sub-admin-editar').style.display = "none";
+            document.getElementById('sub-admin-eliminar').style.display = "none";
+            break;
+        case subAdminEditar:
+            document.getElementById('sub-admin-agregar').style.display = "none";
+            document.getElementById('sub-admin-editar').style.display = "block";
+            document.getElementById('sub-admin-eliminar').style.display = "none";
+            break;
+        case subAdminEliminar:
+            document.getElementById('sub-admin-agregar').style.display = "none";
+            document.getElementById('sub-admin-editar').style.display = "none";
+            document.getElementById('sub-admin-eliminar').style.display = "block";
+        break;
+    
+        default:
+            break;
+    }
 }
 /********************************************************************************************************************* */
+
+function generarEmpresa() { 
+    document.getElementById('empresa').innerHTML = ''; 
+    empresas.forEach(function (emp) { 
+        document.getElementById('empresa').innerHTML += `
+    
+            `;
+    }) 
+} 
