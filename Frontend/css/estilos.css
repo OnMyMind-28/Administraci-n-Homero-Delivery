@@ -269,20 +269,44 @@ ul li a:hover{
 #sub-admin-eliminar{
    display: none;
 }
+/*ALLCont*/
+#all-empresas-cont{
+   display: block;
+}
+#all-productos-cont{
+   display: block;
+}
+#all-moto-cont{
+   display: block;
+}
+#all-cliente-cont{
+   display: block;
+}
+#all-admin-cont{
+   display: block;
+}
 /***********************************************************************************************/
 /*Diseño formularios de submenus*/
 .div-Emp-1{
    width: 850px;
    height: 500px;
-   background-image: linear-gradient( 64.5deg,  rgba(245, 116, 185, 0.592) 14.7%, rgba(89, 98, 223, 0.638) 88.7% );
+   background-image: linear-gradient( 135deg, #81ffee75 10%, #f067b578 100%);
    position:absolute;
   top: 120px;
   left : 450px;
   z-index: 1;
   border-radius: 10px;
 }
+/*Diseño inputs*/
+.input-1{
+   width: 250px !important;
+}
 
+.form-emp-Agregar{
+   margin-top: 50px;
+   margin-left: 50px;
 
+}
 
 
 

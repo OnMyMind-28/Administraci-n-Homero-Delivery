@@ -144,7 +144,23 @@ function generaMenuLateral(){
 function AgregarEmpresa () {
     document.getElementById ('sub-emp-agregar').innerHTML += `
     <div class="div-Emp-1">
-    Prueba1Empresa
+    <div class="form-emp-Agregar">
+    <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Example label</label>
+    <input type="text" class="form-control input-1" id="formGroupExampleInput" placeholder="Example input placeholder">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Another label</label>
+    <input type="text" class="form-control input-1" id="formGroupExampleInput2" placeholder="Another input placeholder">
+  </div>
+  <div class="mb-3 input-group ">
+  <label for="formGroupExampleInput" class="form-label">Example</label>
+  <input type="text" class="form-control  " id="formGroupExampleInput" placeholder="Example input placeholder">
+
+<label for="formGroupExampleInput " class="form-label">Example </label>
+<input type="text" class="form-control "  id="formGroupExampleInput" placeholder="Example input placeholder">
+</div>
+</div>
     </div>
     `
 }
@@ -248,16 +264,31 @@ let subEmpEliminar = 3;
 function ContenidoEmpresa (opcion){
     switch (opcion) {
         case subEmpAgregar:
+            document.getElementById('all-empresas-cont').style.display = "block";
+            document.getElementById('all-admin-cont').style.display = "none";
+            document.getElementById('all-cliente-cont').style.display = "none";
+            document.getElementById('all-productos-cont').style.display = "none";
+            document.getElementById('all-moto-cont').style.display = "none";
             document.getElementById('sub-emp-agregar').style.display = "block";
             document.getElementById('sub-emp-editar').style.display = "none";
             document.getElementById('sub-emp-eliminar').style.display = "none";
             break;
         case subEmpEditar:
+            document.getElementById('all-empresas-cont').style.display = "block";
+            document.getElementById('all-admin-cont').style.display = "none";
+            document.getElementById('all-cliente-cont').style.display = "none";
+            document.getElementById('all-productos-cont').style.display = "none";
+            document.getElementById('all-moto-cont').style.display = "none";
             document.getElementById('sub-emp-agregar').style.display = "none";
             document.getElementById('sub-emp-editar').style.display = "block";
             document.getElementById('sub-emp-eliminar').style.display = "none";
             break;
         case subEmpEliminar:
+            document.getElementById('all-empresas-cont').style.display = "block";
+            document.getElementById('all-admin-cont').style.display = "none";
+            document.getElementById('all-cliente-cont').style.display = "none";
+            document.getElementById('all-productos-cont').style.display = "none";
+            document.getElementById('all-moto-cont').style.display = "none";
             document.getElementById('sub-emp-agregar').style.display = "none";
             document.getElementById('sub-emp-editar').style.display = "none";
             document.getElementById('sub-emp-eliminar').style.display = "block";
@@ -275,16 +306,31 @@ let subProdEliminar = 3;
 function ContenidoProducto (opcion){
     switch (opcion) {
         case subProdAgregar:
+            document.getElementById('all-productos-cont').style.display = "block";
+            document.getElementById('all-admin-cont').style.display = "none";
+            document.getElementById('all-cliente-cont').style.display = "none";
+            document.getElementById('all-moto-cont').style.display = "none";
+            document.getElementById('all-empresas-cont').style.display = "none";
             document.getElementById('sub-prod-agregar').style.display = "block";
             document.getElementById('sub-prod-editar').style.display = "none";
             document.getElementById('sub-prod-eliminar').style.display = "none";
             break;
         case subProdEditar:
+            document.getElementById('all-productos-cont').style.display = "block";
+            document.getElementById('all-admin-cont').style.display = "none";
+            document.getElementById('all-cliente-cont').style.display = "none";
+            document.getElementById('all-moto-cont').style.display = "none";
+            document.getElementById('all-empresas-cont').style.display = "none";
             document.getElementById('sub-prod-agregar').style.display = "none";
             document.getElementById('sub-prod-editar').style.display = "block";
             document.getElementById('sub-prod-eliminar').style.display = "none";
             break;
         case subProdEliminar:
+            document.getElementById('all-productos-cont').style.display = "block";
+            document.getElementById('all-admin-cont').style.display = "none";
+            document.getElementById('all-cliente-cont').style.display = "none";
+            document.getElementById('all-moto-cont').style.display = "none";
+            document.getElementById('all-empresas-cont').style.display = "none";
             document.getElementById('sub-prod-agregar').style.display = "none";
             document.getElementById('sub-prod-editar').style.display = "none";
             document.getElementById('sub-prod-eliminar').style.display = "block";
@@ -302,16 +348,31 @@ let subMotoEliminar = 3;
 function ContenidoMotorista (opcion){
     switch (opcion) {
         case subMotoAgregar:
+            document.getElementById('all-moto-cont').style.display = "block";
+            document.getElementById('all-admin-cont').style.display = "none";
+            document.getElementById('all-cliente-cont').style.display = "none";
+            document.getElementById('all-productos-cont').style.display = "none";
+            document.getElementById('all-empresas-cont').style.display = "none";
             document.getElementById('sub-moto-agregar').style.display = "block";
             document.getElementById('sub-moto-editar').style.display = "none";
             document.getElementById('sub-moto-eliminar').style.display = "none";
             break;
         case subMotoEditar:
+            document.getElementById('all-moto-cont').style.display = "block";
+            document.getElementById('all-admin-cont').style.display = "none";
+            document.getElementById('all-cliente-cont').style.display = "none";
+            document.getElementById('all-productos-cont').style.display = "none";
+            document.getElementById('all-empresas-cont').style.display = "none";
             document.getElementById('sub-moto-agregar').style.display = "none";
             document.getElementById('sub-moto-editar').style.display = "block";
             document.getElementById('sub-moto-eliminar').style.display = "none";
             break;
         case subMotoEliminar:
+            document.getElementById('all-moto-cont').style.display = "block";
+            document.getElementById('all-admin-cont').style.display = "none";
+            document.getElementById('all-cliente-cont').style.display = "none";
+            document.getElementById('all-productos-cont').style.display = "none";
+            document.getElementById('all-empresas-cont').style.display = "none";
             document.getElementById('sub-moto-agregar').style.display = "none";
             document.getElementById('sub-moto-editar').style.display = "none";
             document.getElementById('sub-moto-eliminar').style.display = "block";
@@ -326,6 +387,11 @@ let subVerCliente = 1;
 function ContenidoCliente(opcion){
     switch (opcion) {
         case subAdminAgregar:
+            document.getElementById('all-cliente-cont').style.display = "block";
+            document.getElementById('all-admin-cont').style.display = "none";
+            document.getElementById('all-productos-cont').style.display = "none";
+            document.getElementById('all-moto-cont').style.display = "none";
+            document.getElementById('all-empresas-cont').style.display = "none";
             document.getElementById('sub-ver-cliente').style.display = "block";
           
             break;
@@ -343,16 +409,31 @@ let subAdminEliminar = 3;
 function ContenidoAdmin(opcion){
     switch (opcion) {
         case subAdminAgregar:
+            document.getElementById('all-admin-cont').style.display = "block";
+            document.getElementById('all-cliente-cont').style.display = "none";
+            document.getElementById('all-productos-cont').style.display = "none";
+            document.getElementById('all-moto-cont').style.display = "none";
+            document.getElementById('all-empresas-cont').style.display = "none";
             document.getElementById('sub-admin-agregar').style.display = "block";
             document.getElementById('sub-admin-editar').style.display = "none";
             document.getElementById('sub-admin-eliminar').style.display = "none";
             break;
         case subAdminEditar:
+            document.getElementById('all-admin-cont').style.display = "block";
+            document.getElementById('all-cliente-cont').style.display = "none";
+            document.getElementById('all-productos-cont').style.display = "none";
+            document.getElementById('all-moto-cont').style.display = "none";
+            document.getElementById('all-empresas-cont').style.display = "none";
             document.getElementById('sub-admin-agregar').style.display = "none";
             document.getElementById('sub-admin-editar').style.display = "block";
             document.getElementById('sub-admin-eliminar').style.display = "none";
             break;
         case subAdminEliminar:
+            document.getElementById('all-admin-cont').style.display = "block";
+            document.getElementById('all-cliente-cont').style.display = "none";
+            document.getElementById('all-productos-cont').style.display = "none";
+            document.getElementById('all-moto-cont').style.display = "none";
+            document.getElementById('all-empresas-cont').style.display = "none";
             document.getElementById('sub-admin-agregar').style.display = "none";
             document.getElementById('sub-admin-editar').style.display = "none";
             document.getElementById('sub-admin-eliminar').style.display = "block";
