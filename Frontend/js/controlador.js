@@ -196,8 +196,8 @@ function AgregarEmpresa () {
 </div>
 <div class="btn-form-div">
 
-<button class="btn-Form " onclick="">Agregar</button>
-<button class="btn-Form " onclick="">Cancelar</button>
+<button class="btn-Form                      agregar" onclick="">Agregar</button>
+<button class="btn-Form                 agregar" onclick="">Cancelar</button>
 <div>
     </div>
     `
