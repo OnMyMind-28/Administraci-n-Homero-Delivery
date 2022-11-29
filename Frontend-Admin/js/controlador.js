@@ -144,253 +144,75 @@ function generaMenuLateral(){
 //Función Agregar
 function AgregarEmpresa () {
     document.getElementById ('sub-emp-agregar').innerHTML += `
-    <div class="div-Emp-1">
-    <div class="div-form">
-    <div class="form-floating mt-5">
-      <input type="email" class="form-control input-1" id="floatingInputGrid" placeholder="ID" value="id">
-      <label style="margin-left: 10px;" for="floatingInputGrid">ID</label>
-    </div>
-    <div class="form-floating mt-2">
-      <input type="email" class="form-control input-3" id="floatingInputGrid" placeholder="nombre empresa" value="nombre">
-      <label style="margin-left: 10px;" for="floatingInputGrid">Nombre de la empresa</label>
-    </div>
-    <div class="row g-2 mt-2">
-  <div class="col-md">
-    <div class="form-floating input-4">
-      <input type="email" class="form-control" id="floatingInputGrid" placeholder="RTN" value="RTN">
-      <label class="" for="floatingInputGrid">RTN</label>
-    </div>
-  </div>
-  <div class="col-md">
-    <div class="form-floating input-4">
-      <select class="form-select" id="floatingSelectGrid">
-        <option selected>Imagen</option>
-        <option value="1">img-1</option>
-        <option value="2">img-2</option>
-        <option value="3">img3</option>
-      </select>
-      <label for="floatingSelectGrid">Selecionar imagen</label>
-    </div>
-  </div>
-</div>
-    <div class="row g-2 mt-2" >
     
-  <div class="col-md">
-  
-    <div class="form-floating input-1">
-      <input type="email" class="form-control " id="floatingInputGrid" placeholder="nombre" value="nombre">
-      <label for="floatingInputGrid">Contacto comercial</label>
-
-      <input type="email" class="form-control input-2" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
-      <label class="" style="margin-top:65px;" for="floatingInputGrid">E-mail</label>
-    </div>
-  </div>
-  
-  <div class="col-md">
-    <div class="form-floating input-1">
-    <input type="email" class="form-control " id="floatingInputGrid" placeholder="numero" value="Tel">
-    <label for="floatingInputGrid">Telefono</label>
-      
-    </div>
-  </div>
-</div>
-<div class="btn-form-div">
-
-<button class="btn-Form                      agregar" onclick="">Agregar</button>
-<button class="btn-Form                 agregar" onclick="">Cancelar</button>
-<div>
-    </div>
     `
 }
 function EditarEmpresa () {
     document.getElementById ('sub-emp-editar').innerHTML += `
-    <div class="div-Emp-1">
-    <div class="div-form">
-    <div class="form-floating mt-3">
-      <input type="email" class="form-control input-3" id="floatingInputGrid" placeholder="nombre empresa" value="busqueda">
-      <label style="margin-left: 10px;" for="floatingInputGrid">Buscar empresa</label>
-    </div>
-    <div class="form-floating mt-2">
-      <input type="email" class="form-control input-1" id="floatingInputGrid" placeholder="ID" value="id">
-      <label style="margin-left: 10px;" for="floatingInputGrid">ID</label>
-    </div>
-    <div class="form-floating mt-2">
-      <input type="email" class="form-control input-3" id="floatingInputGrid" placeholder="nombre empresa" value="nombre">
-      <label style="margin-left: 10px;" for="floatingInputGrid">Nombre de la empresa</label>
-    </div>
-    <div class="row g-2 mt-1">
-  <div class="col-md">
-    <div class="form-floating input-4">
-      <input type="email" class="form-control" id="floatingInputGrid" placeholder="RTN" value="RTN">
-      <label class="" for="floatingInputGrid">RTN</label>
-    </div>
-  </div>
-  <div class="col-md">
-    <div class="form-floating input-4">
-      <select class="form-select" id="floatingSelectGrid">
-        <option selected>Imagen</option>
-        <option value="1">img-1</option>
-        <option value="2">img-2</option>
-        <option value="3">img3</option>
-      </select>
-      <label for="floatingSelectGrid">Selecionar imagen</label>
-    </div>
-  </div>
-</div>
-    <div class="row g-2 mt-2" >
     
-  <div class="col-md">
-  
-    <div class="form-floating input-1">
-      <input type="email" class="form-control " id="floatingInputGrid" placeholder="nombre" value="nombre">
-      <label for="floatingInputGrid">Contacto comercial</label>
-
-      <input type="email" class="form-control input-2" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
-      <label class="" style="margin-top:65px;" for="floatingInputGrid">E-mail</label>
-    </div>
-  </div>
-  
-  <div class="col-md">
-    <div class="form-floating input-1">
-    <input type="email" class="form-control " id="floatingInputGrid" placeholder="numero" value="Tel">
-    <label for="floatingInputGrid">Telefono</label>
-      
-    </div>
-  </div>
-</div>
-<div class="btn-form-div">
-
-<button class="btn-Form " onclick="">Actualizar</button>
-<button class="btn-Form " onclick="">Cancelar</button>
-<div>
-    </div>
     `
 }
 function EliminarEmpresa () {
     document.getElementById ('sub-emp-eliminar').innerHTML += `
-    <div class="div-Emp-1">
-    <div class="div-form">
-    <div class="form-floating mt-5">
-      <input type="email" class="form-control input-3" id="floatingInputGrid" placeholder="nombre empresa" value="busqueda">
-      <label style="margin-left: 10px;" for="floatingInputGrid">Buscar empresa</label>
-    </div>
-    <div class="form-floating mt-2">
-      <input type="email" class="form-control input-1" id="floatingInputGrid" placeholder="ID" value="id">
-      <label style="margin-left: 10px;" for="floatingInputGrid">ID</label>
-    </div>
-    <div class="form-floating mt-2">
-      <input type="email" class="form-control input-3" id="floatingInputGrid" placeholder="nombre empresa" value="nombre">
-      <label style="margin-left: 10px;" for="floatingInputGrid">Nombre de la empresa</label>
-    </div>
-    <div class="row g-2 mt-1">
-  <div class="col-md">
-    <div class="form-floating input-4">
-      <input type="email" class="form-control" id="floatingInputGrid" placeholder="RTN" value="RTN">
-      <label class="" for="floatingInputGrid">RTN</label>
-    </div>
-  </div>
-  <div class="col-md">
-    <div class="form-floating input-4">
-      <select class="form-select" id="floatingSelectGrid">
-        <option selected>Imagen</option>
-        <option value="1">img-1</option>
-        <option value="2">img-2</option>
-        <option value="3">img3</option>
-      </select>
-      <label for="floatingSelectGrid">Selecionar imagen</label>
-    </div>
-  </div>
-</div>
-    <div class="row g-2 mt-2" >
-    
-  
-  
-  
-</div>
-<div class="btn-form-div">
-
-<button class="btn-Form " onclick="">Eliminar</button>
-<button class="btn-Form " onclick="">Cancelar</button>
-<div>
-    </div>
+   
     `
 }
 //FUNCIONES PARA OPCIONES DE SUBMENÚ PRODUCTOS
 //Función Agregar
 function AgregarProductos () {
     document.getElementById ('sub-prod-agregar').innerHTML += `
-    <div class="div-Emp-1">
-    Prueba1Producto
-    </div>
+   
     `
 }
 function EditarProductos () {
     document.getElementById ('sub-prod-editar').innerHTML += `
-    <div class="div-Emp-1">
-    Prueba2Producto
-    </div>
+   
     `
 }
 function EliminarProductos () {
     document.getElementById ('sub-prod-eliminar').innerHTML += `
-    <div class="div-Emp-1">
-    Prueba3Producto
-    </div>
+   
     `
 }
 //FUNCIONES PARA OPCIONES DE SUBMENÚ MOTORISTAS
 //Función Agregar
 function AgregarMotoristas () {
     document.getElementById ('sub-moto-agregar').innerHTML += `
-    <div class="div-Emp-1">
-    Prueba1Motorista
-    </div>
+    
     `
 }
 function EditarMotoristas () {
     document.getElementById ('sub-moto-editar').innerHTML += `
-    <div class="div-Emp-1">
-    Prueba2Motorista
-    </div>
+   
     `
 }
 function EliminarMotoristas () {
     document.getElementById ('sub-moto-eliminar').innerHTML += `
-    <div class="div-Emp-1">
-    Prueba3Motorista
-    </div>
+  
     `
 }
 //FUNCIONES PARA OPCIONES DE SUBMENÚ CLIENTES
 //Función que genera el listado de clientes
 function VerClientes () {
     document.getElementById ('sub-ver-cliente').innerHTML += `
-    <div class="div-Emp-1">
-    Prueba1Clientes
-    </div>
+   
     `
 }
 //FUNCIONES PARA OPCIONES DE SUBMENÚ ADMINISTRADORES
 //Función Agregar
 function AgregarAdministrador() {
     document.getElementById ('sub-admin-agregar').innerHTML += `
-    <div class="div-Emp-1">
-    Prueba1Admin
-    </div>
+    
     `
 }
 function EditarAdministrador() {
     document.getElementById ('sub-admin-editar').innerHTML += `
-    <div class="div-Emp-1">
-    Prueba2Admin
-    </div>
+   
     `
 }
 function EliminarAdministrador() {
     document.getElementById ('sub-admin-eliminar').innerHTML += `
-    <div class="div-Emp-1">
-    Prueba3Admin
-    </div>
+    
     `
 }
 /******************************************************************************************** */
@@ -604,5 +426,9 @@ function valida(){
           
   if((user.value == "")||(pass.value == "")){
       window.alert("Los campos usuario y contraseña no pueden estar vacios");
+  }else{
+    //if () {
+      
+    //}
   }
 }
