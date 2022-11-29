@@ -590,3 +590,19 @@ function generarEmpresa() {
             `;
     }) 
 } 
+
+//Validación de formulario
+/*function Validación (valor){
+  let usuario = usuarios[valor];
+  if (usuario.username == usuario.mail) {
+    
+  }
+}*/
+function valida(){
+  var user = document.getElementById('username');
+  var pass = document.getElementById('password');
+          
+  if((user.value == "")||(pass.value == "")){
+      window.alert("Los campos usuario y contraseña no pueden estar vacios");
+  }
+}
