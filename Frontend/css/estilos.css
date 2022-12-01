@@ -4,6 +4,7 @@
 }
    /*Diseño navbar*/
    .nav-1{
+      width: 100% !important;
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
  }
  .logo{
