@@ -69,7 +69,7 @@ function generaMenuLateral(){
     <a class="navbar-brand icon-nav" href="#">
     <span><i class="fa-regular fa-message fa-2x me-3"></i></span>
     <span><i class="fa-sharp fa-solid fa-border-all fa-2x me-3"></i></span>
-    <span ><i class="fa-solid fa-right-from-bracket fa-2x me-3"></i></span>
+    <span> <i  href="index.html" class="fa-solid fa-right-from-bracket fa-2x me-3"></i></span>
     </a>
   </div>
   
