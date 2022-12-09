@@ -27,6 +27,8 @@ if(localStorageusuarios.getItem('usuarios')==null){
     usuarios = JSON.parse(localStorageusuarios.getItem('usuarios'))
 }
 
+
+
 /*************************************************************************************************************** */
 //Función para selección de contenido
 let nav1 = 1;
@@ -432,3 +434,24 @@ function valida(){
     //}
   }
 }
+/********************************************LISTADO CLIENTES*************************************************************** */
+const renderizarUsuario = () => {
+	document.getElementById("user").innerHTML = "";
+	getUsuarios.forEach((userr) => {
+
+		document.getElementById(
+			"user"
+		).innerHTML += `<div class="card" id="${userr._id}">
+				
+				<div class="card-body">
+					<h5 class="card-title">${userr.name}</h5>
+					
+					<hr>
+					
+				</div>
+			</div>`;
+	});
+};
+obtenerUsuarios().then(() => {
+	renderizarUsuario();
+});
